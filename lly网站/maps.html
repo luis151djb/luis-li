@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地图介绍 - CS2游戏资料</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: white;
+        }
+        .header {
+            background-color: #0a0a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            color: #4cc9f0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #16213e;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4cc9f0;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background-color: #3a7bd5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .page-title {
+            text-align: center;
+            color: #4cc9f0;
+            margin-bottom: 30px;
+        }
+        .map-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .map-item {
+            background-color: #16213e;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .map-item:hover {
+            transform: translateY(-5px);
+        }
+        .map-item img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 2px solid #2a3b5c;
+        }
+        .map-name {
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #4cc9f0;
+        }
+        .map-en-name {
+            color: #888;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .map-mini {
+            width: 100%;
+            height: 120px;
+            background-color: #0a0a1a;
+            margin: 10px auto;
+            border-radius: 5px;
+            border: 1px solid #2a3b5c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .map-mini img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border: none;
+        }
+        .map-desc {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #bbb;
+            line-height: 1.4;
+            text-align: left;
+            padding: 0 5px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 30px 0;
+            color: #4cc9f0;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #16213e;
+            border-radius: 5px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .back-link:hover {
+            background-color: #4cc9f0;
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a0a1a;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CS2地图介绍</h1>
+    </div>
+    
+    <div class="nav">
+        <a href="index.html">主界面</a>
+        <a href="weapons.html">武器介绍</a>
+        <a href="maps.html">地图介绍</a>
+        <a href="grenades.html">投掷物介绍</a>
+        <a href="majors.html">Major冠军</a>
+        <a href="gear.html">电竞外设</a>
+    </div>
+    
+    <div class="container">
+        <h2 class="page-title">CS2竞技地图</h2>
+        
+        <div class="map-grid">
+            <!-- 荒漠迷城 -->
+            <div class="map-item">
+                <img src="images/mirage.jpg" alt="荒漠迷城">
+                <div class="map-name">荒漠迷城</div>
+                <div class="map-en-name">Mirage</div>
+                <div class="map-mini">
+                    <img src="images/mirage_mini.jpg" alt="荒漠迷城小地图">
+                </div>
+                <div class="map-desc">经典的中东风格地图，以中路控制和A点爆弹战术著称。</div>
+            </div>
+            
+            <!-- 炙热沙城 -->
+            <div class="map-item">
+                <img src="images/dust2.jpg" alt="炙热沙城">
+                <div class="map-name">炙热沙城</div>
+                <div class="map-en-name">Dust II</div>
+                <div class="map-mini">
+                    <img src="images/dust2_mini.jpg" alt="炙热沙城小地图">
+                </div>
+                <div class="map-desc">CS最经典地图，平衡性好，适合各种战术发挥。</div>
+            </div>
+            
+            <!-- 核子危机 -->
+            <div class="map-item">
+                <img src="images/nuke.jpg" alt="核子危机">
+                <div class="map-name">核子危机</div>
+                <div class="map-en-name">Nuke</div>
+                <div class="map-mini">
+                    <img src="images/nuke_mini.jpg" alt="核子危机小地图">
+                </div>
+                <div class="map-desc">多层结构复杂地图，垂直战斗和外围控制是关键。</div>
+            </div>
+            
+            <!-- 死亡游乐园 -->
+            <div class="map-item">
+                <img src="images/overpass.jpg" alt="死亡游乐园">
+                <div class="map-name">死亡游乐园</div>
+                <div class="map-en-name">Overpass</div>
+                <div class="map-mini">
+                    <img src="images/overpass_mini.jpg" alt="死亡游乐园小地图">
+                </div>
+                <div class="map-desc">德国柏林的运河公园，以长通道和复杂结构著称。</div>
+            </div>
+            
+            <!-- 列车停放站 -->
+            <div class="map-item">
+                <img src="images/train.jpg" alt="列车停放站">
+                <div class="map-name">列车停放站</div>
+                <div class="map-en-name">Train</div>
+                <div class="map-mini">
+                    <img src="images/train_mini.jpg" alt="列车停放站小地图">
+                </div>
+                <div class="map-desc">火车站主题，CT优势较大，需要良好的团队配合。</div>
+            </div>
+            
+            <!-- 远古遗迹 -->
+            <div class="map-item">
+                <img src="images/ancient.jpg" alt="远古遗迹">
+                <div class="map-name">远古遗迹</div>
+                <div class="map-en-name">Ancient</div>
+                <div class="map-mini">
+                    <img src="images/ancient_mini.jpg" alt="远古遗迹小地图">
+                </div>
+                <div class="map-desc">丛林神庙主题，视野开阔，强调中路控制。</div>
+            </div>
+            
+            <!-- 殒命大厦 -->
+            <div class="map-item">
+                <img src="images/vertigo.jpg" alt="殒命大厦">
+                <div class="map-name">殒命大厦</div>
+                <div class="map-en-name">Vertigo</div>
+                <div class="map-mini">
+                    <img src="images/vertigo_mini.jpg" alt="殒命大厦小地图">
+                </div>
+                <div class="map-desc">高空建筑工地，T方优势，快速进攻是主流战术。</div>
+            </div>
+            
+            <!-- 阿努比斯 -->
+            <div class="map-item">
+                <img src="images/anubis.jpg" alt="阿努比斯">
+                <div class="map-name">阿努比斯</div>
+                <div class="map-en-name">Anubis</div>
+                <div class="map-mini">
+                    <img src="images/anubis_mini.jpg" alt="阿努比斯小地图">
+                </div>
+                <div class="map-desc">埃及主题地图，水域和狭窄通道形成独特战斗风格。</div>
+            </div>
+            
+            <!-- 炼狱小镇 -->
+            <div class="map-item">
+                <img src="images/inferno.jpg" alt="炼狱小镇">
+                <div class="map-name">炼狱小镇</div>
+                <div class="map-en-name">Inferno</div>
+                <div class="map-mini">
+                    <img src="images/inferno_mini.jpg" alt="炼狱小镇小地图">
+                </div>
+                <div class="map-desc">意大利小镇风格，香蕉道争夺是地图核心。</div>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-link">返回主界面</a>
+    </div>
+    
+    <div class="footer">
+        <p>CS2游戏资料站 © 2023</p>
+    </div>
+</body>
+</html>
