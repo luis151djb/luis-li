@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投掷物介绍 - CS2游戏资料</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: white;
+        }
+        .header {
+            background-color: #0a0a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            color: #4cc9f0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #16213e;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4cc9f0;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background-color: #3a7bd5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .page-title {
+            text-align: center;
+            color: #4cc9f0;
+            margin-bottom: 30px;
+        }
+        .grenade-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .grenade-item {
+            background-color: #16213e;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .grenade-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4cc9f0;
+            margin-bottom: 10px;
+        }
+        .grenade-img {
+            width: 100%;
+            height: 150px;
+            background-color: #0a0a1a;
+            margin: 10px auto;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .grenade-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 10px;
+        }
+        .grenade-info {
+            margin-top: 10px;
+            text-align: left;
+            padding: 0 10px;
+        }
+        .grenade-info p {
+            margin: 5px 0;
+        }
+        .price {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 30px 0;
+            color: #4cc9f0;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #16213e;
+            border-radius: 5px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .back-link:hover {
+            background-color: #4cc9f0;
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a0a1a;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CS2投掷物介绍</h1>
+    </div>
+    
+    <div class="nav">
+        <a href="index.html">主界面</a>
+        <a href="weapons.html">武器介绍</a>
+        <a href="maps.html">地图介绍</a>
+        <a href="grenades.html">投掷物介绍</a>
+        <a href="majors.html">Major冠军</a>
+        <a href="gear.html">电竞外设</a>
+    </div>
+    
+    <div class="container">
+        <h2 class="page-title">CS2投掷物性能</h2>
+        
+        <div class="grenade-grid">
+            <div class="grenade-item">
+                <div class="grenade-name">烟雾弹</div>
+                <div class="grenade-img">
+                    <img src="images/smoke_grenade.jpg" alt="烟雾弹">
+                </div>
+                <div class="grenade-info">
+                    <p><span class="price">价格: $300</span></p>
+                    <p>持续时间: 18秒</p>
+                    <p>效果: 产生烟雾遮挡视线</p>
+                    <p>用途: 掩护进攻或撤退</p>
+                </div>
+            </div>
+            
+            <div class="grenade-item">
+                <div class="grenade-name">闪光弹</div>
+                <div class="grenade-img">
+                    <img src="images/flashbang.jpg" alt="闪光弹">
+                </div>
+                <div class="grenade-info">
+                    <p><span class="price">价格: $200</span></p>
+                    <p>致盲时间: 最长5秒</p>
+                    <p>效果: 致盲范围内的敌人</p>
+                    <p>用途: 进攻或防守时使用</p>
+                </div>
+            </div>
+            
+            <div class="grenade-item">
+                <div class="grenade-name">高爆手雷</div>
+                <div class="grenade-img">
+                    <img src="images/he_grenade.jpg" alt="高爆手雷">
+                </div>
+                <div class="grenade-info">
+                    <p><span class="price">价格: $300</span></p>
+                    <p>伤害: 最高98（近距离）</p>
+                    <p>效果: 爆炸造成范围伤害</p>
+                    <p>用途: 消耗敌人血量</p>
+                </div>
+            </div>
+            
+            <div class="grenade-item">
+                <div class="grenade-name">燃烧瓶</div>
+                <div class="grenade-img">
+                    <img src="images/molotov.jpg" alt="燃烧瓶">
+                </div>
+                <div class="grenade-info">
+                    <p><span class="price">价格: $400</span></p>
+                    <p>持续时间: 7秒</p>
+                    <p>效果: 产生燃烧区域</p>
+                    <p>阵营: 恐怖分子专用</p>
+                    <p>用途: 阻止敌人通过</p>
+                </div>
+            </div>
+            
+            <div class="grenade-item">
+                <div class="grenade-name">燃烧弹</div>
+                <div class="grenade-img">
+                    <img src="images/incendiary.jpg" alt="燃烧弹">
+                </div>
+                <div class="grenade-info">
+                    <p><span class="price">价格: $500</span></p>
+                    <p>持续时间: 7秒</p>
+                    <p>效果: 产生燃烧区域</p>
+                    <p>阵营: 反恐精英专用</p>
+                    <p>用途: 防守关键区域</p>
+                </div>
+            </div>
+            
+            <div class="grenade-item">
+                <div class="grenade-name">诱饵弹</div>
+                <div class="grenade-img">
+                    <img src="images/decoy.jpg" alt="诱饵弹">
+                </div>
+                <div class="grenade-info">
+                    <p><span class="price">价格: $50</span></p>
+                    <p>持续时间: 10秒</p>
+                    <p>效果: 发出枪声迷惑敌人</p>
+                    <p>用途: 迷惑敌人判断</p>
+                </div>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-link">返回主界面</a>
+    </div>
+    
+    <div class="footer">
+        <p>CS2游戏资料站 © 2023</p>
+    </div>
+</body>
+</html>

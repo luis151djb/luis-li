@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major冠军 - CS2游戏资料</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 主界面链接样式 */
+        .home-link {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+        .home-link a {
+            color: #4cc9f0;
+            text-decoration: none;
+            font-size: 14px;
+            background: rgba(10, 14, 23, 0.8);
+            padding: 5px 10px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .home-link a:hover {
+            background: #4cc9f0;
+            color: white;
+        }
+        
+        /* 原有样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: white;
+        }
+        .header {
+            background-color: #0a0a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            color: #4cc9f0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #16213e;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4cc9f0;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background-color: #3a7bd5;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .page-title {
+            text-align: center;
+            color: #4cc9f0;
+            margin-bottom: 30px;
+        }
+        .major-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .major-item {
+            background-color: #16213e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid #2a3b5c;
+        }
+        .major-item:hover {
+            transform: translateY(-5px);
+            border-color: #4cc9f0;
+            box-shadow: 0 5px 15px rgba(76, 201, 240, 0.2);
+        }
+        .major-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 2px solid #0a0a1a;
+        }
+        .major-name {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #4cc9f0;
+        }
+        .major-year {
+            color: #ffcc00;
+            margin: 8px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .major-tournament {
+            color: #aaa;
+            font-size: 16px;
+            margin: 5px 0;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .major-location {
+            color: #888;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .major-note {
+            color: #4cc9f0;
+            font-size: 12px;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        .year-header {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 15px;
+            background-color: #0a0a1a;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #4cc9f0;
+        }
+        .year-header h3 {
+            margin: 0;
+            color: #ffcc00;
+            font-size: 24px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 40px 0 20px;
+            color: #4cc9f0;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #16213e;
+            border-radius: 5px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .back-link:hover {
+            background-color: #4cc9f0;
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a0a1a;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 左上角主界面链接 -->
+    <div class="home-link">
+        <a href="index.html"><i class="fas fa-home"></i> 主界面</a>
+    </div>
+    
+    <div class="header">
+        <h1>CS:GO/CS2 Major冠军</h1>
+    </div>
+    
+    <div class="nav">
+        <a href="index.html">主界面</a>
+        <a href="weapons.html">武器介绍</a>
+        <a href="maps.html">地图介绍</a>
+        <a href="grenades.html">投掷物介绍</a>
+        <a href="majors.html">Major冠军</a>
+        <a href="gear.html">电竞外设</a>
+    </div>
+    
+    <div class="container">
+        <h2 class="page-title">完整Major冠军历史 (2013-2024)</h2>
+        
+        <div class="major-grid">
+            <!-- 2013年 -->
+            <div class="year-header">
+                <h3>2013年</h3>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major1.jpg" alt="DreamHack Winter 2013冠军">
+                <div class="major-name">Fnatic</div>
+                <div class="major-year">DreamHack Winter 2013</div>
+                <div class="major-tournament">第一届CS:GO Major</div>
+                <div class="major-location">延雪平, 瑞典</div>
+            </div>
+            
+            <!-- 2014年 -->
+            <div class="year-header">
+                <h3>2014年</h3>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major2.jpg" alt="EMS One Katowice 2014冠军">
+                <div class="major-name">Virtus.pro</div>
+                <div class="major-year">EMS One Katowice 2014</div>
+                <div class="major-tournament">第二届Major</div>
+                <div class="major-location">卡托维兹, 波兰</div>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major2_2.jpg" alt="ESL One Cologne 2014冠军">
+                <div class="major-name">Ninjas in Pyjamas</div>
+                <div class="major-year">ESL One Cologne 2014</div>
+                <div class="major-tournament">第三届Major</div>
+                <div class="major-location">科隆, 德国</div>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major2_3.jpg" alt="DreamHack Winter 2014冠军">
+                <div class="major-name">Team LDLC</div>
+                <div class="major-year">DreamHack Winter 2014</div>
+                <div class="major-tournament">第四届Major</div>
+                <div class="major-location">延雪平, 瑞典</div>
+            </div>
+            
+            <!-- 2015年 -->
+            <div class="year-header">
+                <h3>2015年</h3>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major3.jpg" alt="ESL One Katowice 2015冠军">
+                <div class="major-name">Fnatic</div>
+                <div class="major-year">ESL One Katowice 2015</div>
+                <div class="major-tournament">第五届Major</div>
+                <div class="major-location">卡托维兹, 波兰</div>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major3_2.jpg" alt="ESL One Cologne 2015冠军">
+                <div class="major-name">Fnatic</div>
+                <div class="major-year">ESL One Cologne 2015</div>
+                <div class="major-tournament">第六届Major</div>
+                <div class="major-location">科隆, 德国</div>
+                <div class="major-note">Fnatic卫冕成功</div>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major3_3.jpg" alt="DreamHack Open Cluj-Napoca 2015冠军">
+                <div class="major-name">EnVyUs</div>
+                <div class="major-year">DreamHack Open Cluj-Napoca 2015</div>
+                <div class="major-tournament">第七届Major</div>
+                <div class="major-location">克卢日-纳波卡, 罗马尼亚</div>
+            </div>
+            
+            <!-- 2016年 -->
+            <div class="year-header">
+                <h3>2016年</h3>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major4.jpg" alt="MLG Columbus 2016冠军">
+                <div class="major-name">Luminosity Gaming</div>
+                <div class="major-year">MLG Columbus 2016</div>
+                <div class="major-tournament">第八届Major</div>
+                <div class="major-location">哥伦布, 美国</div>
+                <div class="major-note">后更名为SK Gaming</div>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major4_2.jpg" alt="ESL One Cologne 2016冠军">
+                <div class="major-name">SK Gaming</div>
+                <div class="major-year">ESL One Cologne 2016</div>
+                <div class="major-tournament">第九届Major</div>
+                <div class="major-location">科隆, 德国</div>
+            </div>
+            
+            <!-- 2017年 -->
+            <div class="year-header">
+                <h3>2017年</h3>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major5.jpg" alt="ELEAGUE Major 2017冠军">
+                <div class="major-name">Astralis</div>
+                <div class="major-year">ELEAGUE Major 2017</div>
+                <div class="major-tournament">第十届Major</div>
+                <div class="major-location">亚特兰大, 美国</div>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major5_2.jpg" alt="PGL Major Krakow 2017冠军">
+                <div class="major-name">Gambit Esports</div>
+                <div class="major-year">PGL Major Krakow 2017</div>
+                <div class="major-tournament">第十一届Major</div>
+                <div class="major-location">克拉科夫, 波兰</div>
+            </div>
+            
+            <!-- 2018年 -->
+            <div class="year-header">
+                <h3>2018年</h3>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major6.jpg" alt="ELEAGUE Major Boston 2018冠军">
+                <div class="major-name">Cloud9</div>
+                <div class="major-year">ELEAGUE Major Boston 2018</div>
+                <div class="major-tournament">第十二届Major</div>
+                <div class="major-location">波士顿, 美国</div>
+                <div class="major-note">北美首个Major冠军</div>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major6_2.jpg" alt="FACEIT Major London 2018冠军">
+                <div class="major-name">Astralis</div>
+                <div class="major-year">FACEIT Major London 2018</div>
+                <div class="major-tournament">第十三届Major</div>
+                <div class="major-location">伦敦, 英国</div>
+            </div>
+            
+            <!-- 2019年 -->
+            <div class="year-header">
+                <h3>2019年</h3>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major7.jpg" alt="IEM Katowice 2019冠军">
+                <div class="major-name">Astralis</div>
+                <div class="major-year">IEM Katowice 2019</div>
+                <div class="major-tournament">第十四届Major</div>
+                <div class="major-location">卡托维兹, 波兰</div>
+                <div class="major-note">Astralis三连冠</div>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major7_2.jpg" alt="StarLadder Berlin Major 2019冠军">
+                <div class="major-name">Astralis</div>
+                <div class="major-year">StarLadder Berlin Major 2019</div>
+                <div class="major-tournament">第十五届Major</div>
+                <div class="major-location">柏林, 德国</div>
+                <div class="major-note">Astralis四连冠</div>
+            </div>
+            
+            <!-- 2021年 -->
+            <div class="year-header">
+                <h3>2021年</h3>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major8.jpg" alt="PGL Major Stockholm 2021冠军">
+                <div class="major-name">Natus Vincere</div>
+                <div class="major-year">PGL Major Stockholm 2021</div>
+                <div class="major-tournament">第十六届Major</div>
+                <div class="major-location">斯德哥尔摩, 瑞典</div>
+                <div class="major-note">首个独联体地区Major冠军</div>
+            </div>
+            
+            <!-- 2022年 -->
+            <div class="year-header">
+                <h3>2022年</h3>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major9.jpg" alt="PGL Major Antwerp 2022冠军">
+                <div class="major-name">FaZe Clan</div>
+                <div class="major-year">PGL Major Antwerp 2022</div>
+                <div class="major-tournament">第十七届Major</div>
+                <div class="major-location">安特卫普, 比利时</div>
+                <div class="major-note">国际纵队首个Major</div>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major10.jpg" alt="IEM Rio Major 2022冠军">
+                <div class="major-name">Outsiders</div>
+                <div class="major-year">IEM Rio Major 2022</div>
+                <div class="major-tournament">第十八届Major</div>
+                <div class="major-location">里约热内卢, 巴西</div>
+                <div class="major-note">VP战队马甲</div>
+            </div>
+            
+            <!-- 2023年 -->
+            <div class="year-header">
+                <h3>2023年</h3>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major11.jpg" alt="BLAST.tv Paris Major 2023冠军">
+                <div class="major-name">Team Vitality</div>
+                <div class="major-year">BLAST.tv Paris Major 2023</div>
+                <div class="major-tournament">第十九届Major</div>
+                <div class="major-location">巴黎, 法国</div>
+                <div class="major-note">最后一个CS:GO Major</div>
+            </div>
+            
+            <!-- 2024年 -->
+            <div class="year-header">
+                <h3>2024年</h3>
+            </div>
+            
+            <div class="major-item">
+                <img src="images/major12.jpg" alt="PGL Major Copenhagen 2024冠军">
+                <div class="major-name">Natus Vincere</div>
+                <div class="major-year">PGL Major Copenhagen 2024</div>
+                <div class="major-tournament">第二十届Major</div>
+                <div class="major-location">哥本哈根, 丹麦</div>
+                <div class="major-note">首个CS2 Major</div>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-link">返回主界面</a>
+    </div>
+    
+    <div class="footer">
+        <p>CS2游戏资料站 © 2023 | 共收录19届Major冠军</p>
+    </div>
+</body>
+</html>

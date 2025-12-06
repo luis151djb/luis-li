@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电竞外设 - CS2游戏资料</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: white;
+        }
+        .header {
+            background-color: #0a0a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            color: #4cc9f0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #16213e;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4cc9f0;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background-color: #3a7bd5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .page-title {
+            text-align: center;
+            color: #4cc9f0;
+            margin-bottom: 30px;
+        }
+        .gear-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gear-item {
+            background-color: #16213e;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .gear-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            background-color: #0a0a1a;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .gear-name {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .gear-brand {
+            color: #4cc9f0;
+            margin: 5px 0;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            color: #4cc9f0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a0a1a;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CS2电竞外设推荐</h1>
+    </div>
+    
+    <div class="nav">
+        <a href="index.html">主界面</a>
+        <a href="weapons.html">武器介绍</a>
+        <a href="maps.html">地图介绍</a>
+        <a href="grenades.html">投掷物介绍</a>
+        <a href="majors.html">Major冠军</a>
+        <a href="gear.html">电竞外设</a>
+    </div>
+    
+    <div class="container">
+        <h2 class="page-title">推荐电竞外设</h2>
+        
+        <div class="gear-grid">
+            <div class="gear-item">
+                <img src="images/mouse1.jpg" alt="罗技鼠标">
+                <div class="gear-name">G Pro X Superlight</div>
+                <div class="gear-brand">罗技 (Logitech)</div>
+            </div>
+            <div class="gear-item">
+                <img src="images/keyboard1.jpg" alt="海盗船键盘">
+                <div class="gear-name">K70 RGB</div>
+                <div class="gear-brand">海盗船 (Corsair)</div>
+            </div>
+            <div class="gear-item">
+                <img src="images/headset1.jpg" alt="赛睿耳机">
+                <div class="gear-name">Arctis Pro</div>
+                <div class="gear-brand">赛睿 (SteelSeries)</div>
+            </div>
+            <div class="gear-item">
+                <img src="images/mouse2.jpg" alt="雷蛇鼠标">
+                <div class="gear-name">Viper V2 Pro</div>
+                <div class="gear-brand">雷蛇 (Razer)</div>
+            </div>
+            <div class="gear-item">
+                <img src="images/monitor1.jpg" alt="卓威显示器">
+                <div class="gear-name">XL2546K</div>
+                <div class="gear-brand">卓威 (ZOWIE)</div>
+            </div>
+            <div class="gear-item">
+                <img src="images/mousepad1.jpg" alt="虎符鼠标垫">
+                <div class="gear-name">雷霆</div>
+                <div class="gear-brand">虎符 (Tiger)</div>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-link">返回主界面</a>
+    </div>
+    
+    <div class="footer">
+        <p>CS2游戏资料站 © 2023</p>
+    </div>
+</body>
+</html>

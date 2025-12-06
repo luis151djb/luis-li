@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>武器介绍 - CS2游戏资料</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: white;
+        }
+        .header {
+            background-color: #0a0a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            color: #4cc9f0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #16213e;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4cc9f0;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background-color: #3a7bd5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .page-title {
+            text-align: center;
+            color: #4cc9f0;
+            margin-bottom: 30px;
+        }
+        .weapon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .weapon-item {
+            background-color: #16213e;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .weapon-item img {
+            width: 150px;
+            height: 100px;
+            object-fit: contain;
+            background-color: #0a0a1a;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .weapon-name {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #4cc9f0;
+        }
+        .weapon-price {
+            color: #00ff00;  /* 绿色显示价格 */
+            font-weight: bold;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .weapon-damage {
+            color: #ff9900;  /* 橙色显示伤害 */
+            font-size: 13px;
+            margin-top: 5px;
+            padding: 3px 8px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            color: #4cc9f0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a0a1a;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CS2武器介绍</h1>
+    </div>
+    
+    <div class="nav">
+        <a href="index.html">主界面</a>
+        <a href="weapons.html">武器介绍</a>
+        <a href="maps.html">地图介绍</a>
+        <a href="grenades.html">投掷物介绍</a>
+        <a href="majors.html">Major冠军</a>
+        <a href="gear.html">电竞外设</a>
+    </div>
+    
+    <div class="container">
+        <h2 class="page-title">CS2武器列表</h2>
+        
+        <div class="weapon-grid">
+            <!-- AK-47 -->
+            <div class="weapon-item">
+                <img src="images/ak47.jpg" alt="AK-47">
+                <div class="weapon-name">AK-47</div>
+                <div class="weapon-price">价格: $2700</div>
+                <div class="weapon-damage">伤害: 36 | 穿甲: 77.5%</div>
+            </div>
+            
+            <!-- M4A4 -->
+            <div class="weapon-item">
+                <img src="images/m4a4.jpg" alt="M4A4">
+                <div class="weapon-name">M4A4</div>
+                <div class="weapon-price">价格: $3100</div>
+                <div class="weapon-damage">伤害: 33 | 穿甲: 70%</div>
+            </div>
+            
+            <!-- AWP -->
+            <div class="weapon-item">
+                <img src="images/awp.jpg" alt="AWP">
+                <div class="weapon-name">AWP</div>
+                <div class="weapon-price">价格: $4750</div>
+                <div class="weapon-damage">伤害: 115 | 穿甲: 97.5%</div>
+            </div>
+            
+            <!-- USP-S -->
+            <div class="weapon-item">
+                <img src="images/usp.jpg" alt="USP-S">
+                <div class="weapon-name">USP-S</div>
+                <div class="weapon-price">价格: $200</div>
+                <div class="weapon-damage">伤害: 35 | 穿甲: 50.5%</div>
+            </div>
+            
+            <!-- Glock-18 -->
+            <div class="weapon-item">
+                <img src="images/glock.jpg" alt="Glock-18">
+                <div class="weapon-name">Glock-18</div>
+                <div class="weapon-price">价格: $200</div>
+                <div class="weapon-damage">伤害: 28 | 穿甲: 47%</div>
+            </div>
+            
+            <!-- P250 -->
+            <div class="weapon-item">
+                <img src="images/p250.jpg" alt="P250">
+                <div class="weapon-name">P250</div>
+                <div class="weapon-price">价格: $300</div>
+                <div class="weapon-damage">伤害: 38 | 穿甲: 64%</div>
+            </div>
+            
+            <!-- Desert Eagle -->
+            <div class="weapon-item">
+                <img src="images/deagle.jpg" alt="Desert Eagle">
+                <div class="weapon-name">Desert Eagle</div>
+                <div class="weapon-price">价格: $700</div>
+                <div class="weapon-damage">伤害: 53 | 穿甲: 93%</div>
+            </div>
+            
+            <!-- Galil AR -->
+            <div class="weapon-item">
+                <img src="images/galil.jpg" alt="Galil AR">
+                <div class="weapon-name">Galil AR</div>
+                <div class="weapon-price">价格: $1800</div>
+                <div class="weapon-damage">伤害: 30 | 穿甲: 77.5%</div>
+            </div>
+            
+            <!-- M4A1-S -->
+            <div class="weapon-item">
+                <img src="images/m4a1s.jpg" alt="M4A1-S">
+                <div class="weapon-name">M4A1-S</div>
+                <div class="weapon-price">价格: $2900</div>
+                <div class="weapon-damage">伤害: 38 | 穿甲: 70%</div>
+            </div>
+            
+            <!-- FAMAS -->
+            <div class="weapon-item">
+                <img src="images/famas.jpg" alt="FAMAS">
+                <div class="weapon-name">FAMAS</div>
+                <div class="weapon-price">价格: $2050</div>
+                <div class="weapon-damage">伤害: 30 | 穿甲: 70%</div>
+            </div>
+            
+            <!-- SG 553 -->
+            <div class="weapon-item">
+                <img src="images/sg553.jpg" alt="SG 553">
+                <div class="weapon-name">SG 553</div>
+                <div class="weapon-price">价格: $3000</div>
+                <div class="weapon-damage">伤害: 30 | 穿甲: 100%</div>
+            </div>
+            
+            <!-- AUG -->
+            <div class="weapon-item">
+                <img src="images/aug.jpg" alt="AUG">
+                <div class="weapon-name">AUG</div>
+                <div class="weapon-price">价格: $3300</div>
+                <div class="weapon-damage">伤害: 28 | 穿甲: 90%</div>
+            </div>
+            
+            <!-- MP9 -->
+            <div class="weapon-item">
+                <img src="images/mp9.jpg" alt="MP9">
+                <div class="weapon-name">MP9</div>
+                <div class="weapon-price">价格: $1250</div>
+                <div class="weapon-damage">伤害: 26 | 穿甲: 60%</div>
+            </div>
+            
+            <!-- MAC-10 -->
+            <div class="weapon-item">
+                <img src="images/mac10.jpg" alt="MAC-10">
+                <div class="weapon-name">MAC-10</div>
+                <div class="weapon-price">价格: $1050</div>
+                <div class="weapon-damage">伤害: 29 | 穿甲: 57.5%</div>
+            </div>
+            
+            <!-- MP7 -->
+            <div class="weapon-item">
+                <img src="images/mp7.jpg" alt="MP7">
+                <div class="weapon-name">MP7</div>
+                <div class="weapon-price">价格: $1500</div>
+                <div class="weapon-damage">伤害: 29 | 穿甲: 62.5%</div>
+            </div>
+            
+            <!-- P90 -->
+            <div class="weapon-item">
+                <img src="images/p90.jpg" alt="P90">
+                <div class="weapon-name">P90</div>
+                <div class="weapon-price">价格: $2350</div>
+                <div class="weapon-damage">伤害: 26 | 穿甲: 69%</div>
+            </div>
+            
+            <!-- SSG 08 -->
+            <div class="weapon-item">
+                <img src="images/scout.jpg" alt="SSG 08">
+                <div class="weapon-name">SSG 08</div>
+                <div class="weapon-price">价格: $1700</div>
+                <div class="weapon-damage">伤害: 88 | 穿甲: 85%</div>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-link">返回主界面</a>
+    </div>
+    
+    <div class="footer">
+        <p>CS2游戏资料站 © 2023</p>
+    </div>
+</body>
+</html>
